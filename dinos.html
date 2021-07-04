@@ -1,0 +1,975 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Animais</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+	<!-- CDN CSS Bootstrap -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+	 crossorigin="anonymous">
+	<!-- CDN Icones Bootstrap -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
+	<!-- CDN JS JQuery -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+	 crossorigin="anonymous">
+
+	</script>
+	<!-- CDN JS Bundle Bootstrap -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+	 crossorigin="anonymous">
+
+	</script>
+	<!-- AJAX -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+
+	</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js">
+
+	</script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <!-- FONTES GOOGLE -->
+  <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Tangerine">
+</head>
+
+<body>
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+	<div class="topnav fixed-top" id="myTopnav">
+		<a href="/index.html">Pagina Inicial</a>
+		<a href="/dinos.html" class="active">Animais</a>
+		<a href="/loja.html">Loja</a>
+		
+    <a href="https://wikiarkforum.forumeiros.com" target="blank">Forum</a>
+		
+
+		<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+			<i class="fa fa-bars"></i>
+  </a>
+</div>
+<div class="container-fluid mt-5">
+
+  <div class="jumbotron">
+    <div style="font-family: 'Tangerine', serif;
+  font-size: 100px;
+  text-shadow: 4px 4px 4px #915454;">
+    Animais</div>
+    <div style="font-family: Georgia, serif;">    
+    <h4><p>Locais onde os respectivos animais podem ser encontrados, e suas características.</p></h4>
+    <p>Escolha abaixo.</p>
+  </div></div>
+  
+
+
+  <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo">Terrestres</button>
+  <div id="demo" class="collapse">
+    <div class="container mt-3">
+
+
+  <br>
+
+<div class="container">
+  <h2 style="font-family: Georgia, serif;">Animais terrestres</h2>
+  <br>
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs" role="tablist">
+    <li class="nav-item">
+      <a class="nav-link active" data-toggle="tab" href="#rex">Rex</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="tab" href="#allosaurus">Allosaurus</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="tab" href="#triceratops">Triceratops</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="tab" href="#brontosaurus">Brontosaurus</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="tab" href="#carbonemys">carbonemys</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="tab" href="#direwolf">Direwolf</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="tab" href="#diplodocus">Diplodocus</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="tab" href="#kentrosaurus">Kentrosaurus</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="tab" href="#gigantopithecus">Gigantopithecus</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="tab" href="#direbear">Direbear</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="tab" href="#moschops">Moschops</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="tab" href="#raptor">Raptor</a>
+    </li>
+    
+
+  </ul>
+
+
+
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div id="rex" class="container tab-pane active"><br>
+      <h1 style="color:red">Rex</h1>
+      <img class="img-fluid; center" style="width:50%" src="/dinos/rex2.png" alt="rex">
+
+
+      <table class="table">
+    <thead>
+      <tr>
+        
+        <th>Status</th>
+        <th>Base (lvl 1)</th>
+        <th>Increase per level (wild)</th>
+        <th>Increase per level (tamed)</th>
+      </tr>
+    </thead>
+    <tbody>
+            
+      <tr class="table-primary">
+        <td><strong>Health</td>
+        <td>1,100</td>
+        <td>+220</td>
+        <td>+5.4%</td>
+      </tr>
+      <tr class="table-success">
+        <td><strong>Stamina</td>
+        <td>420</td>
+        <td>+42</td>
+        <td>+10%</td>
+      </tr>
+      <tr class="table-danger">
+        <td><strong>Oxygen</td>
+        <td>150</td>
+        <td>+15</td>
+        <td>+10%</td>
+      </tr>
+      <tr class="table-info">
+        <td><strong>Food</td>
+        <td>3,000</td>
+        <td>+300</td>
+        <td>+10%</td>
+      </tr>
+      <tr class="table-warning">
+        <td><strong>Weight</td>
+        <td>+500</td>
+        <td>+10</td>
+        <td>+4%</td>
+      </tr>
+      <tr class="table-active">
+        <td><strong>Melle Damage</td>
+        <td>100%</td>
+        <td>+5%</td>
+        <td>+1,7%</td>
+      </tr>
+      <tr class="table-primary">
+        <td><strong>Movement Speed</td>
+        <td>100%</td>
+        <td>-</td>
+        <td>+2,5%</td>
+      </tr>
+      <tr class="table-success">
+        <td><strong>Torpor</td>
+        <td>1,550</td>
+        <td>+93</td>
+        <td>-</td>
+      </tr>
+      
+    </tbody>
+  </table>      
+    </div>
+
+    <div id="allosaurus" class="container tab-pane fade"><br>
+      <h1 style="color:red">Allosaurus</h1>
+      <img class="img-fluid; center "style="width:50%" src="/dinos/allosaurus.png" alt="allosaurus">
+      <table class="table">
+    <thead>
+      <tr>
+        
+        <th>Status</th>
+        <th>Base (lvl 1)</th>
+        <th>Increase per level (wild)</th>
+        <th>Increase per level (tamed)</th>
+      </tr>
+    </thead>
+    <tbody>
+            
+      <tr class="table-primary">
+        <td><strong>Health</td>
+        <td>630</td>
+        <td>+126</td>
+        <td>+5.4%</td>
+      </tr>
+      <tr class="table-success">
+        <td><strong>Stamina</td>
+        <td>4250</td>
+        <td>+25</td>
+        <td>+10%</td>
+      </tr>
+      <tr class="table-danger">
+        <td><strong>Oxygen</td>
+        <td>150</td>
+        <td>+15</td>
+        <td>+10%</td>
+      </tr>
+      <tr class="table-info">
+        <td><strong>Food</td>
+        <td>3,000</td>
+        <td>+300</td>
+        <td>+10%</td>
+      </tr>
+      <tr class="table-warning">
+        <td><strong>Weight</td>
+        <td>+380</td>
+        <td>+7.6</td>
+        <td>+4%</td>
+      </tr>
+      <tr class="table-active">
+        <td><strong>Melle Damage</td>
+        <td>100%</td>
+        <td>+5%</td>
+        <td>+1.7%</td>
+      </tr>
+      <tr class="table-primary">
+        <td><strong>Movement Speed</td>
+        <td>100%</td>
+        <td>-</td>
+        <td>+2,5%</td>
+      </tr>
+      <tr class="table-success">
+        <td><strong>Torpor</td>
+        <td>1,000</td>
+        <td>+60</td>
+        <td>-</td>
+      </tr>
+      
+    </tbody>
+  </table>
+      
+    </div>
+
+
+
+
+
+
+    
+
+
+    <div id="triceratops" class="container tab-pane fade"><br>
+      <h1 style="color:red">Triceratops</h1>
+      <img class="img-fluid; center"style="width:50%" src="/dinos/triceratops.png" alt="triceratops">
+      <table class="table">
+    <thead>
+      <tr>
+        
+        <th>Status</th>
+        <th>Base (lvl 1)</th>
+        <th>Increase per level (wild)</th>
+        <th>Increase per level (tamed)</th>
+      </tr>
+    </thead>
+    <tbody>
+            
+      <tr class="table-primary">
+        <td><strong>Health</td>
+        <td>1,100</td>
+        <td>+220</td>
+        <td>+5.4%</td>
+      </tr>
+      <tr class="table-success">
+        <td><strong>Stamina</td>
+        <td>420</td>
+        <td>+42</td>
+        <td>+10%</td>
+      </tr>
+      <tr class="table-danger">
+        <td><strong>Oxygen</td>
+        <td>150</td>
+        <td>+15</td>
+        <td>+10%</td>
+      </tr>
+      <tr class="table-info">
+        <td><strong>Food</td>
+        <td>3,000</td>
+        <td>+300</td>
+        <td>+10%</td>
+      </tr>
+      <tr class="table-warning">
+        <td><strong>Weight</td>
+        <td>+500</td>
+        <td>+10</td>
+        <td>+4%</td>
+      </tr>
+      <tr class="table-active">
+        <td><strong>Melle Damage</td>
+        <td>100%</td>
+        <td>+5%</td>
+        <td>+1,7%</td>
+      </tr>
+      <tr class="table-primary">
+        <td><strong>Movement Speed</td>
+        <td>100%</td>
+        <td>-</td>
+        <td>+2,5%</td>
+      </tr>
+      <tr class="table-success">
+        <td><strong>Torpor</td>
+        <td>1,550</td>
+        <td>+93</td>
+        <td>-</td>
+      </tr>
+      
+    </tbody>
+  </table>      
+    </div>
+
+
+  <div id="carbonemys" class="container tab-pane fade"><br>
+      <h1 style="color:red">Carbonemys</h1>
+      <img class="img-fluid; center"style="width:50%" src="/dinos/carbonemys.png" alt="carbonemys">
+      <table class="table">
+    <thead>
+      <tr>
+        
+        <th>Status</th>
+        <th>Base (lvl 1)</th>
+        <th>Increase per level (wild)</th>
+        <th>Increase per level (tamed)</th>
+      </tr>
+    </thead>
+    <tbody>
+            
+      <tr class="table-primary">
+        <td><strong>Health</td>
+        <td>700</td>
+        <td>+140</td>
+        <td>+5.4%</td>
+      </tr>
+      <tr class="table-success">
+        <td><strong>Stamina</td>
+        <td>200</td>
+        <td>+20</td>
+        <td>+10%</td>
+      </tr>
+      <tr class="table-danger">
+        <td><strong>Oxygen</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+      </tr>
+      <tr class="table-info">
+        <td><strong>Food</td>
+        <td>3,000</td>
+        <td>+300</td>
+        <td>+10%</td>
+      </tr>
+      <tr class="table-warning">
+        <td><strong>Weight</td>
+        <td>+270</td>
+        <td>+5.4</td>
+        <td>+10.8%</td>
+      </tr>
+      <tr class="table-active">
+        <td><strong>Melle Damage</td>
+        <td>100%</td>
+        <td>+5%</td>
+        <td>+2.0%</td>
+      </tr>
+      <tr class="table-primary">
+        <td><strong>Movement Speed</td>
+        <td>100%</td>
+        <td>-</td>
+        <td>+2,0%</td>
+      </tr>
+      <tr class="table-success">
+        <td><strong>Torpor</td>
+        <td>275</td>
+        <td>+16.5</td>
+        <td>-</td>
+      </tr>
+      
+    </tbody>
+  </table>      
+    </div>
+
+
+
+
+
+    <div id="direwolf" class="container tab-pane fade"><br>
+      <h1 style="color:red">Direwolf</h1>
+      <img class="img-fluid; center"style="width:50%" src="/dinos/direwolf.png" alt="direwolf">
+      <table class="table">
+    <thead>
+      <tr>
+        
+        <th>Status</th>
+        <th>Base (lvl 1)</th>
+        <th>Increase per level (wild)</th>
+        <th>Increase per level (tamed)</th>
+      </tr>
+    </thead>
+    <tbody>
+            
+      <tr class="table-primary">
+        <td><strong>Health</td>
+        <td>330</td>
+        <td>+66</td>
+        <td>+5.4%</td>
+      </tr>
+      <tr class="table-success">
+        <td><strong>Stamina</td>
+        <td>260</td>
+        <td>+26</td>
+        <td>+10%</td>
+      </tr>
+      <tr class="table-danger">
+        <td><strong>Oxygen</td>
+        <td>150</td>
+        <td>+15</td>
+        <td>+10%</td>
+      </tr>
+      <tr class="table-info">
+        <td><strong>Food</td>
+        <td>1,200</td>
+        <td>+120</td>
+        <td>+10%</td>
+      </tr>
+      <tr class="table-warning">
+        <td><strong>Weight</td>
+        <td>+170</td>
+        <td>+3.4</td>
+        <td>+4%</td>
+      </tr>
+      <tr class="table-active">
+        <td><strong>Melle Damage</td>
+        <td>100%</td>
+        <td>+5%</td>
+        <td>+1,7%</td>
+      </tr>
+      <tr class="table-primary">
+        <td><strong>Movement Speed</td>
+        <td>100%</td>
+        <td>-</td>
+        <td>+3.0%</td>
+      </tr>
+      <tr class="table-success">
+        <td><strong>Torpor</td>
+        <td>450</td>
+        <td>+27</td>
+        <td>-</td>
+      </tr>
+      
+    </tbody>
+  </table>      
+    </div>
+
+
+    <div id="diplodocus" class="container tab-pane fade"><br>
+      <h1 style="color:red">Diplodocus</h1>
+      <img class="img-fluid; center"style="width:50%" src="/dinos/diplodocus.png" alt="diplodocus">
+      <table class="table">
+    <thead>
+      <tr>
+        
+        <th>Status</th>
+        <th>Base (lvl 1)</th>
+        <th>Increase per level (wild)</th>
+        <th>Increase per level (tamed)</th>
+      </tr>
+    </thead>
+    <tbody>
+            
+      <tr class="table-primary">
+        <td><strong>Health</td>
+        <td>1,700</td>
+        <td>+340</td>
+        <td>+5.4%</td>
+      </tr>
+      <tr class="table-success">
+        <td><strong>Stamina</td>
+        <td>550</td>
+        <td>+55</td>
+        <td>+10%</td>
+      </tr>
+      <tr class="table-danger">
+        <td><strong>Oxygen</td>
+        <td>300</td>
+        <td>+30</td>
+        <td>+10%</td>
+      </tr>
+      <tr class="table-info">
+        <td><strong>Food</td>
+        <td>10,000</td>
+        <td>+1,000</td>
+        <td>+10%</td>
+      </tr>
+      <tr class="table-warning">
+        <td><strong>Weight</td>
+        <td>+800</td>
+        <td>+16</td>
+        <td>+4%</td>
+      </tr>
+      <tr class="table-active">
+        <td><strong>Melle Damage</td>
+        <td>-</td>
+        <td>-</td>
+        <td>+4%</td>
+      </tr>
+      <tr class="table-primary">
+        <td><strong>Movement Speed</td>
+        <td>100%</td>
+        <td>-</td>
+        <td>+1%</td>
+      </tr>
+      <tr class="table-success">
+        <td><strong>Torpor</td>
+        <td>3,000</td>
+        <td>+180</td>
+        <td>-</td>
+      </tr>
+      
+    </tbody>
+  </table>      
+    </div>
+
+    <div id="kentrosaurus" class="container tab-pane fade"><br>
+      <h1 style="color:red">kentrosaurus</h1>
+      <img class="img-fluid; center"style="width:50%" src="/dinos/kentrosaurus.png" alt="kentrosaurus">
+      <table class="table">
+    <thead>
+      <tr>
+        
+        <th>Status</th>
+        <th>Base (lvl 1)</th>
+        <th>Increase per level (wild)</th>
+        <th>Increase per level (tamed)</th>
+      </tr>
+    </thead>
+    <tbody>
+            
+      <tr class="table-primary">
+        <td><strong>Health</td>
+        <td>650</td>
+        <td>+130</td>
+        <td>+2%</td>
+      </tr>
+      <tr class="table-success">
+        <td><strong>Stamina</td>
+        <td>300</td>
+        <td>+30</td>
+        <td>+10%</td>
+      </tr>
+      <tr class="table-danger">
+        <td><strong>Oxygen</td>
+        <td>150</td>
+        <td>+15</td>
+        <td>+10%</td>
+      </tr>
+      <tr class="table-info">
+        <td><strong>Food</td>
+        <td>6,000</td>
+        <td>+600</td>
+        <td>+10%</td>
+      </tr>
+      <tr class="table-warning">
+        <td><strong>Weight</td>
+        <td>+500</td>
+        <td>+10</td>
+        <td>+4%</td>
+      </tr>
+      <tr class="table-active">
+        <td><strong>Melle Damage</td>
+        <td>100%</td>
+        <td>+5%</td>
+        <td>+2%</td>
+      </tr>
+      <tr class="table-primary">
+        <td><strong>Movement Speed</td>
+        <td>100%</td>
+        <td>-</td>
+        <td>+4,91%</td>
+      </tr>
+      <tr class="table-success">
+        <td><strong>Torpor</td>
+        <td>500</td>
+        <td>+30</td>
+        <td>-</td>
+      </tr>
+      
+    </tbody>
+  </table>      
+    </div>
+
+    <div id="gigantopithecus" class="container tab-pane fade"><br>
+      <h1 style="color:red">Gigantopithecus</h1>
+      <img class="img-fluid; center" src="/dinos/gigantopithecus.png" alt="gigantopithecus">
+      <table class="table">
+    <thead>
+      <tr>
+        
+        <th>Status</th>
+        <th>Base (lvl 1)</th>
+        <th>Increase per level (wild)</th>
+        <th>Increase per level (tamed)</th>
+      </tr>
+    </thead>
+    <tbody>
+            
+      <tr class="table-primary">
+        <td><strong>Health</td>
+        <td>1,100</td>
+        <td>+220</td>
+        <td>+5.4%</td>
+      </tr>
+      <tr class="table-success">
+        <td><strong>Stamina</td>
+        <td>420</td>
+        <td>+42</td>
+        <td>+10%</td>
+      </tr>
+      <tr class="table-danger">
+        <td><strong>Oxygen</td>
+        <td>150</td>
+        <td>+15</td>
+        <td>+10%</td>
+      </tr>
+      <tr class="table-info">
+        <td><strong>Food</td>
+        <td>3,000</td>
+        <td>+300</td>
+        <td>+10%</td>
+      </tr>
+      <tr class="table-warning">
+        <td><strong>Weight</td>
+        <td>+500</td>
+        <td>+10</td>
+        <td>+4%</td>
+      </tr>
+      <tr class="table-active">
+        <td><strong>Melle Damage</td>
+        <td>100%</td>
+        <td>+5%</td>
+        <td>+1,7%</td>
+      </tr>
+      <tr class="table-primary">
+        <td><strong>Movement Speed</td>
+        <td>100%</td>
+        <td>-</td>
+        <td>+2,5%</td>
+      </tr>
+      <tr class="table-success">
+        <td><strong>Torpor</td>
+        <td>1,550</td>
+        <td>+93</td>
+        <td>-</td>
+      </tr>
+      
+    </tbody>
+  </table>      
+    </div>
+
+    <div id="brontosaurus" class="container tab-pane fade"><br>
+      <h1 style="color:red">Brontosaurus</h1>
+      <img class="img-fluid; center"style="width:50%" src="/dinos/brontosaurus.png" alt="brontosaurus">
+      <table class="table">
+    <thead>
+      <tr>
+        
+        <th>Status</th>
+        <th>Base (lvl 1)</th>
+        <th>Increase per level (wild)</th>
+        <th>Increase per level (tamed)</th>
+      </tr>
+    </thead>
+    <tbody>
+            
+      <tr class="table-primary">
+        <td><strong>Health</td>
+        <td>2,070</td>
+        <td>+414</td>
+        <td>+3.8%</td>
+      </tr>
+      <tr class="table-success">
+        <td><strong>Stamina</td>
+        <td>240</td>
+        <td>+24</td>
+        <td>+10%</td>
+      </tr>
+      <tr class="table-danger">
+        <td><strong>Oxygen</td>
+        <td>150</td>
+        <td>+15</td>
+        <td>+10%</td>
+      </tr>
+      <tr class="table-info">
+        <td><strong>Food</td>
+        <td>10,000</td>
+        <td>+1,000</td>
+        <td>+10%</td>
+      </tr>
+      <tr class="table-warning">
+        <td><strong>Weight</td>
+        <td>+1600</td>
+        <td>+32</td>
+        <td>+4%</td>
+      </tr>
+      <tr class="table-active">
+        <td><strong>Melle Damage</td>
+        <td>100%</td>
+        <td>+5%</td>
+        <td>+2.0%</td>
+      </tr>
+      <tr class="table-primary">
+        <td><strong>Movement Speed</td>
+        <td>100%</td>
+        <td>-</td>
+        <td>+2,5%</td>
+      </tr>
+      <tr class="table-success">
+        <td><strong>Torpor</td>
+        <td>2,000</td>
+        <td>+120</td>
+        <td>-</td>
+      </tr>
+      
+    </tbody>
+  </table>      
+    </div>
+
+
+
+    <div id="direbear" class="container tab-pane fade"><br>
+      <h1 style="color:red">Direbear</h1>
+      <img class="img-fluid; center" style="width:40%" src="/dinos/direbear.png" alt="direbear">
+      <table class="table">
+    <thead>
+      <tr>
+        
+        <th>Status</th>
+        <th>Base (lvl 1)</th>
+        <th>Increase per level (wild)</th>
+        <th>Increase per level (tamed)</th>
+      </tr>
+    </thead>
+    <tbody>
+            
+      <tr class="table-primary">
+        <td><strong>Health</td>
+        <td>400</td>
+        <td>+80</td>
+        <td>+5.4%</td>
+      </tr>
+      <tr class="table-success">
+        <td><strong>Stamina</td>
+        <td>500</td>
+        <td>+50</td>
+        <td>+10%</td>
+      </tr>
+      <tr class="table-danger">
+        <td><strong>Oxygen</td>
+        <td>270</td>
+        <td>+27</td>
+        <td>+10%</td>
+      </tr>
+      <tr class="table-info">
+        <td><strong>Food</td>
+        <td>3,000</td>
+        <td>+300</td>
+        <td>+10%</td>
+      </tr>
+      <tr class="table-warning">
+        <td><strong>Weight</td>
+        <td>+650</td>
+        <td>+13</td>
+        <td>+4%</td>
+      </tr>
+      <tr class="table-active">
+        <td><strong>Melle Damage</td>
+        <td>100%</td>
+        <td>+5%</td>
+        <td>+2%</td>
+      </tr>
+      <tr class="table-primary">
+        <td><strong>Movement Speed</td>
+        <td>223%</td>
+        <td>-</td>
+        <td>+2,5%</td>
+      </tr>
+      <tr class="table-success">
+        <td><strong>Torpor</td>
+        <td>1,000</td>
+        <td>+60</td>
+        <td>-</td>
+      </tr>
+      
+    </tbody>
+  </table>      
+    </div>
+
+    <div id="moschops" class="container tab-pane fade"><br>
+      <h1 style="color:red">Moschops</h1>
+      <img class="img-fluid; center" style="width:45%" src="/dinos/moschops.png" alt="moschops">
+      <table class="table">
+    <thead>
+      <tr>
+        
+        <th>Status</th>
+        <th>Base (lvl 1)</th>
+        <th>Increase per level (wild)</th>
+        <th>Increase per level (tamed)</th>
+      </tr>
+    </thead>
+    <tbody>
+            
+      <tr class="table-primary">
+        <td><strong>Health</td>
+        <td>375</td>
+        <td>+75</td>
+        <td>+5.4%</td>
+      </tr>
+      <tr class="table-success">
+        <td><strong>Stamina</td>
+        <td>300</td>
+        <td>+30</td>
+        <td>+10%</td>
+      </tr>
+      <tr class="table-danger">
+        <td><strong>Oxygen</td>
+        <td>150</td>
+        <td>+15</td>
+        <td>+10%</td>
+      </tr>
+      <tr class="table-info">
+        <td><strong>Food</td>
+        <td>300</td>
+        <td>+30</td>
+        <td>+10%</td>
+      </tr>
+      <tr class="table-warning">
+        <td><strong>Weight</td>
+        <td>+200</td>
+        <td>+4</td>
+        <td>+4%</td>
+      </tr>
+      <tr class="table-active">
+        <td><strong>Melle Damage</td>
+        <td>100%</td>
+        <td>+5%</td>
+        <td>+1,7%</td>
+      </tr>
+      <tr class="table-primary">
+        <td><strong>Movement Speed</td>
+        <td>100%</td>
+        <td>-</td>
+        <td>+2,5%</td>
+      </tr>
+      <tr class="table-success">
+        <td><strong>Torpor</td>
+        <td>300</td>
+        <td>+18</td>
+        <td>-</td>
+      </tr>
+      
+    </tbody>
+  </table>      
+    </div>
+
+
+    <div id="raptor" class="container tab-pane fade"><br>
+      <h1 style="color:red">Raptor</h1>
+      <img class="img-fluid; center" style="width:50%" src="/dinos/raptor.png" alt="raptor">
+      <table class="table">
+    <thead>
+      <tr>
+        
+        <th>Status</th>
+        <th>Base (lvl 1)</th>
+        <th>Increase per level (wild)</th>
+        <th>Increase per level (tamed)</th>
+      </tr>
+    </thead>
+    <tbody>
+            
+      <tr class="table-primary">
+        <td><strong>Health</td>
+        <td>200</td>
+        <td>+40</td>
+        <td>+5.4%</td>
+      </tr>
+      <tr class="table-success">
+        <td><strong>Stamina</td>
+        <td>150</td>
+        <td>+15</td>
+        <td>+10%</td>
+      </tr>
+      <tr class="table-danger">
+        <td><strong>Oxygen</td>
+        <td>150</td>
+        <td>+15</td>
+        <td>+10%</td>
+      </tr>
+      <tr class="table-info">
+        <td><strong>Food</td>
+        <td>1,200</td>
+        <td>+120</td>
+        <td>+10%</td>
+      </tr>
+      <tr class="table-warning">
+        <td><strong>Weight</td>
+        <td>+140</td>
+        <td>+2.8</td>
+        <td>+4%</td>
+      </tr>
+      <tr class="table-active">
+        <td><strong>Melle Damage</td>
+        <td>100%</td>
+        <td>+5%</td>
+        <td>+2,0%</td>
+      </tr>
+      <tr class="table-primary">
+        <td><strong>Movement Speed</td>
+        <td>100%</td>
+        <td>-</td>
+        <td>+3,0%</td>
+      </tr>
+      <tr class="table-success">
+        <td><strong>Torpor</td>
+        <td>180</td>
+        <td>+10,8</td>
+        <td>-</td>
+      </tr>
+      
+    </tbody>
+  </table>      
+    </div>    
+</div>
+
+  </div><!--collapse-->
+
+
+
+</div><!--container-fluid-->
+
+
+
+    
+    
+  <script src="script.js"></script>
+  </body>
+</html>
